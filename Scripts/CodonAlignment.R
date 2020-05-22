@@ -11,5 +11,3 @@ inputSeqs_Gapless<-RemoveGaps(inputSeqs)
 MAlign<-AlignTranslation(inputSeqs_Gapless,refinements=50)
 SMAlign<-StaggerAlignment(MAlign)
 writeXStringSet(SMAlign,filepath = "codonAln_output.aln")
-
-system(command = "FastTree -nt -gtr < ./codonAln_output.aln > codonAln.tree")
