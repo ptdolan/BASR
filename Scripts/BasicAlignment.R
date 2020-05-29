@@ -12,4 +12,4 @@ MAlign<-AlignSeqs(inputSeqs_Gapless,refinements=10)
 SMAlign<-StaggerAlignment(MAlign)
 writeXStringSet(SMAlign,filepath = "basicAln_output.aln")
 
-system(command = "FastTree -nt -gtr < ./basicAln_output.aln > basicAln.tree")
+#system(command = "FastTree -nt -gtr < ./basicAln_output.aln > basicAln.tree")
