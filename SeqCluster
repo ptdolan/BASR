@@ -1,0 +1,57 @@
+#Usage: python seqCluster.py <myfasta.fa>
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import sklearn as skl
+from multiprocessing import Pool
+from sklearn.cluster import AgglomerativeClustering
+from Bio import SeqIO
+import sys
+
+inFile=sys.argv[1]
+
+def g(e=-1,S=0):
+    JkHMR.loc[(JkHMR["Cond. E-value"]<(10**e))&(JkHMR["Score"]>S)].plot.scatter(x='E-value',y="Cond. E-value",c="Acc",colormap='viridis',loglog=True)
+    return (e)
+
+def distMatch(packet):
+    (pos,dims,fragList,kmerL)=packet
+    matchList=[[(np.sum(np.array(fragList[pos][taxA] != fragList[pos][taxB]))) for taxA in range(dims[1])] for taxB in range(dims[1])]
+    return(np.array(matchList))
+
+def SeqClust(fastaAln,kmerL=50):
+    inF=fastaAln
+    records = list(SeqIO.parse(inF, "fasta"))
+
+    fragList=np.array([[i.seq[j:j+kmerL] for i in records ] for j in range(len(records[0].seq)-25)])
+
+    dims=np.shape(fragList)
+
+    print("Computing K-mer Distances, with K-mer length:"+str(kmerL))
+    with Pool(10) as p:
+        distList=p.map(distMatch, [(i,dims,fragList,kmerL) for i in range(dims[0])])
+    print("Done.")
+    npDL=np.array(distList)
+    al=np.zeros([dims[1],dims[1]])
+    n=0
+
+    for i in npDL:
+        al+=i
+        n+=1
+    dists=al/n
+    print(pd.DataFrame(dists))
+    #mpl.pyplot.imshow(dists)
+
+    ac = AgglomerativeClustering(3, affinity='precomputed',linkage="single")
+    clusters=ac.fit_predict(np.matrix(dists))
+
+    scaled=skl.manifold.MDS(n_components=2)
+    Emb=scaled.fit(dists).embedding_
+    #print(Emb)
+
+    mpl.pyplot.scatter([i[0] for i in Emb],[i[1] for i in Emb],c=clusters,cmap="Spectral")
+    #mpl.pyplot.scatter([],c=clusters,cmap="Spectral")
+    return()
+
+if __name__ == "__main__":
+    SeqClust()
