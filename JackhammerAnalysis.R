@@ -31,14 +31,44 @@ ggplot(hits[hits$`Target Name` %in% names(table(hits$`Target Name`)[table(hits$`
 ggplot(hits[hits$`Target Name` %in% names(table(hits$`Target Name`)[table(hits$`Target Name`)>1]) ])+
   geom_segment(aes(col=Score,x=`Query Ali. Start`, xend=`Query Ali. End`, y=`Target Name`, yend=`Target Name`),alpha=0.2)+coord_fixed()+scale_color_viridis_c()
 
-ggplot(hits[targetLength>450&targetCoverage>.90,`Target Name`])+
-  geom_segment(aes(col=Score,x=`Target Ali. Start`, xend=`Target Ali. End`, y=`Target Name`, yend=`Target Name`),alpha=0.2)+scale_color_viridis_c()
-
-hits[,hitCover:=`Query Ali. End`-`Query Ali. Start`]
-hits[,targetCover:=`Target Ali. End`-`Target Ali. Start`]
-hits[,targetCoverage:=sum(targetCover)/`Target Length`,by=`Target Name`]
+ggplot(hits[FILTER,])+
+  geom_segment(aes(col=Score,x=`Target Ali. Start`, xend=`Target Ali. End`, y=`Target Name`, yend=`Target Name`),alpha=1)+scale_color_viridis_c()+ggpubr::theme_pubr()+theme(axis.text.y = element_text(size = 2))
 
 
+listcompare<-function(X)
+{
+  return(length(unique(X[,unique(`Target Ali. Start`:`Target Ali. End`)]))/X$`Query Length`)
+}
 
+hits[,`targetCoverage`:=listcompare(.SD),by=`Target Name`]
+
+#ggplot(hits[targetCover>450&targetCoverage>.90&`Target Length`<600])+
+#  geom_segment(aes(col=Score,x=`Query Ali. Start`, xend=`Query Ali. End`, y=`Target Name`, yend=`Target Name`),alpha=0.2)+scale_color_viridis_c()
+FILTER<-with(hits,targetCoverage>.8&`Target Length`)
+table(FILTER)
+Before<-ggplot(hits)+
+  stat_bin(aes(fill=as.factor(round(targetCoverage,digits = 1)),x=Score),position = 'stack')+
+  scale_fill_viridis_d()+
+  theme_bw()+ggtitle("Before Filter")+
+  labs(fill = "Query Coverage")
+
+After<-ggplot(hits[FILTER])+
+  stat_bin(aes(fill=as.factor(round(targetCoverage,digits = 1)),x=Score),position = 'stack')+
+  scale_fill_viridis_d(begin = 0.6)+
+  theme_bw()+ggtitle("After Filter")+
+  labs(fill = "Query Coverage")
+cowplot::plot_grid(Before,After)
+
+seqs<-read.fasta("~/Documents/GitHub/BASR/JackHMMER_sequences_all_final.fa")
+seqList={}
+
+for(i in seqs){
+  if(attr(i,"name")%in%hits$`Target Name`[FILTER]){
+    print("match")
+    seqList<-append(seqList,i)
+    }
+}
+
+write.csv(file="~/Documents/GitHub/BASR/Data/Filtered_JackHmmer.csv",hits[FILTER],quote = F,row.names = F)
 
 
