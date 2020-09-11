@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Select sample of representative sequences after clustering. 
+# Usage: > sh SlimAlign.sh <inputFile> <number of representative sequences> 
+# Author: P.T. Dolan Stanford University, 2020
 
 inputFile=$1
 
