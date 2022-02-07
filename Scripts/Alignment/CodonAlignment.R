@@ -12,11 +12,11 @@ inputSeqs<-RemoveGaps(inputSeqs)#Dealign any alignments for correct sequence len
 MED=median(width(inputSeqs))#median length
 MAD=mad(width(inputSeqs))#median deviation
 
-prelength<-length(inputSeqs)
-inputSeqs<-inputSeqs[abs(width(inputSeqs)-MED)<=(MAD*2)]#filter out long or short sequences (2 deviations away...)
-postlength<-length(inputSeqs)
+#prelength<-length(inputSeqs)
+#inputSeqs<-inputSeqs[abs(width(inputSeqs)-MED)<=(MAD*2)]#filter out long or short sequences (2 deviations away...)
+#postlength<-length(inputSeqs)
 
-print(paste("Cut sequences from",prelength,"to",postlength,"."))
+#print(paste("Cut sequences from",prelength,"to",postlength,"."))
 
 inputSeqs<-inputSeqs[]#Filter by some criteria.
 names(inputSeqs)<-lapply(X = names(inputSeqs),function(X){paste(strsplit(X," ")[[1]],collapse= "_")}) #avoids some name parsing issues with other programs.
