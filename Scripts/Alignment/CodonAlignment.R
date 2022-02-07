@@ -1,8 +1,8 @@
-#Basic Alignment.R
-#Alignment of fa files. Usage (in command line): `Rscript BasicAlignment.R <myfasta.fa> [<other optional .fa's ... >]
-
+#Codon Alignment.R
+#Alignment of fa files. Usage (in command line): `Rscript CodonAlignment.R <myfasta.fa> [<other optional .fa's ... >]
 suppressMessages(library(Biostrings))
 suppressMessages(library(DECIPHER))
+
 
 inputList<-commandArgs(trailingOnly=TRUE)
 inputSeqs<-readDNAStringSet(inputList)#Vector of DNA FASTA files.
@@ -13,7 +13,7 @@ MED=median(width(inputSeqs))#median length
 MAD=mad(width(inputSeqs))#median deviation
 
 prelength<-length(inputSeqs)
-#inputSeqs<-inputSeqs[abs(width(inputSeqs)-MED)<=(MAD*2)]#filter out long or short sequences (2 deviations away...)
+inputSeqs<-inputSeqs[abs(width(inputSeqs)-MED)<=(MAD*2)]#filter out long or short sequences (2 deviations away...)
 postlength<-length(inputSeqs)
 
 print(paste("Cut sequences from",prelength,"to",postlength,"."))

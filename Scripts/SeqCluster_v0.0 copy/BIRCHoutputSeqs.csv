@@ -1,0 +1,187 @@
+,cluster,info
+0,0,gi|17532603|ref|NP_495750.1| Protein CCT-4 [Caenorhabditis elegans]
+1,0,gi|15229595|ref|NP_188447.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+2,0,gi|115445891|ref|NP_001046725.1| Os02g0332200 [Oryza sativa Japonica Group]
+3,0,gi|115482922|ref|NP_001065054.1| Os10g0514600 [Oryza sativa Japonica Group]
+4,0,gi|24583944|ref|NP_609579.1| CG5525 [Drosophila melanogaster]
+5,0,gi|58379953|ref|XP_310191.2| AGAP009505-PA [Anopheles gambiae str. PEST]
+0,1,gi|45201410|ref|NP_986980.1| AGR314Wp [Ashbya gossypii ATCC 10895]
+1,1,gi|6322446|ref|NP_012520.1| Cct3p [Saccharomyces cerevisiae S288c]
+2,1,gi|50312115|ref|XP_456089.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+3,1,gi|19112602|ref|NP_595810.1| chaperonin-containing T-complex gamma subunit Cct3 [Schizosaccharomyces pombe 972h-]
+4,1,gi|389623377|ref|XP_003709342.1| T-complex protein 1 subunit gamma [Magnaporthe oryzae 70-15]
+5,1,gi|164428224|ref|XP_956627.2| T-complex protein 1 subunit gamma [Neurospora crassa OR74A]
+0,2,gi|19114189|ref|NP_593277.1| chaperonin-containing T-complex epsilon subunit Cct5 [Schizosaccharomyces pombe 972h-]
+1,2,gi|389623313|ref|XP_003709310.1| T-complex protein 1 subunit epsilon [Magnaporthe oryzae 70-15]
+2,2,gi|164426665|ref|XP_956565.2| T-complex protein 1 subunit epsilon [Neurospora crassa OR74A]
+3,2,"gi|25144674|ref|NP_741117.1| Protein CCT-5, isoform a [Caenorhabditis elegans]"
+4,2,gi|15221770|ref|NP_173859.1| T-complex protein 1 subunit epsilon [Arabidopsis thaliana]
+5,2,gi|115468554|ref|NP_001057876.1| Os06g0562600 [Oryza sativa Japonica Group]
+6,2,"gi|17647245|ref|NP_523707.1| T-complex chaperonin 5, isoform A [Drosophila melanogaster]"
+7,2,gi|158296884|ref|XP_317219.3| AGAP008249-PA [Anopheles gambiae str. PEST]
+0,3,gi|45191016|ref|NP_985270.1| AER415Wp [Ashbya gossypii ATCC 10895]
+1,3,gi|6322049|ref|NP_012124.1| Cct2p [Saccharomyces cerevisiae S288c]
+2,3,gi|50305503|ref|XP_452711.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+3,3,gi|19113929|ref|NP_593017.1| chaperonin-containing T-complex beta subunit Cct2 [Schizosaccharomyces pombe 972h-]
+4,3,gi|389622127|ref|XP_003708717.1| T-complex protein 1 subunit beta [Magnaporthe oryzae 70-15]
+5,3,gi|85092747|ref|XP_959526.1| T-complex protein 1 subunit beta [Neurospora crassa OR74A]
+6,3,gi|15242093|ref|NP_197589.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+0,4,gi|45198585|ref|NP_985614.1| AFR067Wp [Ashbya gossypii ATCC 10895]
+1,4,gi|6322350|ref|NP_012424.1| Cct7p [Saccharomyces cerevisiae S288c]
+2,4,gi|50312013|ref|XP_456038.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+3,4,gi|19113147|ref|NP_596355.1| chaperonin-containing T-complex eta subunit Cct7 [Schizosaccharomyces pombe 972h-]
+4,4,gi|389638034|ref|XP_003716650.1| T-complex protein 1 subunit eta [Magnaporthe oryzae 70-15]
+5,4,gi|85091515|ref|XP_958939.1| T-complex protein 1 subunit eta [Neurospora crassa OR74A]
+0,5,gi|226693361|ref|NP_033969.2| T-complex protein 1 subunit zeta-2
+1,5,gi|62079183|ref|NP_001014250.1| T-complex protein 1 subunit zeta-2
+2,5,gi|58331173|ref|NP_006575.2| T-complex protein 1 subunit zeta-2 isoform 1
+3,5,gi|350539459|ref|NP_001233572.1| T-complex protein 1 subunit zeta-2
+4,5,gi|73966838|ref|XP_548266.2| PREDICTED: T-complex protein 1 subunit zeta-2 isoformX1 [Canis lupus familiaris]
+5,5,gi|77736227|ref|NP_001029814.1| T-complex protein 1 subunit zeta-2
+6,5,gi|41152046|ref|NP_958447.1| T-complex protein 1 subunit zeta
+7,5,"gi|47575728|ref|NP_001001208.1| chaperonin containing TCP1, subunit 6A (zeta 1)"
+8,5,gi|57525300|ref|NP_001006216.1| T-complex protein 1 subunit zeta
+9,5,gi|545500762|ref|XP_005621066.1| PREDICTED: T-complex protein 1 subunit zeta [Canis lupus familiaris]
+10,5,gi|297288261|ref|XP_001090105.2| PREDICTED: t-complex protein 1 subunit zeta-like isoform 2 [Macaca mulatta]
+11,5,gi|4502643|ref|NP_001753.1| T-complex protein 1 subunit zeta isoform a
+12,5,gi|114613457|ref|XP_001159391.1| PREDICTED: T-complex protein 1 subunit zeta isoform 9 [Pan troglodytes]
+13,5,gi|77736031|ref|NP_001029714.1| T-complex protein 1 subunit zeta
+14,5,gi|6753324|ref|NP_033968.1| T-complex protein 1 subunit zeta
+15,5,gi|76253725|ref|NP_001028856.1| T-complex protein 1 subunit zeta
+0,6,gi|19113806|ref|NP_592894.1| mitochondrial heat shock protein Hsp60/Mcp60 [Schizosaccharomyces pombe 972h-]
+1,6,gi|389638386|ref|XP_003716826.1| heat shock protein 60 [Magnaporthe oryzae 70-15]
+2,6,"gi|164428039|ref|XP_956500.2| heat shock protein 60, mitochondrial precursor [Neurospora crassa OR74A]"
+3,6,gi|6323288|ref|NP_013360.1| chaperone ATPase HSP60 [Saccharomyces cerevisiae S288c]
+4,6,gi|50310975|ref|XP_455510.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+5,6,gi|302308696|ref|NP_985702.2| AFR155Wp [Ashbya gossypii ATCC 10895]
+0,7,gi|392898272|ref|NP_500035.3| Protein CCT-8 [Caenorhabditis elegans]
+1,7,gi|19921848|ref|NP_610418.1| CG8258 [Drosophila melanogaster]
+2,7,gi|118785337|ref|XP_314553.3| AGAP010588-PA [Anopheles gambiae str. PEST]
+0,8,gi|25148561|ref|NP_494218.2| Protein CCT-3 [Caenorhabditis elegans]
+1,8,"gi|24647510|ref|NP_650572.2| cctgamma, isoform A [Drosophila melanogaster]"
+2,8,gi|158290572|ref|XP_312164.4| AGAP002759-PA [Anopheles gambiae str. PEST]
+0,9,gi|6322452|ref|NP_012526.1| Cct8p [Saccharomyces cerevisiae S288c]
+1,9,gi|50307003|ref|XP_453479.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+2,9,gi|302306981|ref|NP_983448.2| ACR045Wp [Ashbya gossypii ATCC 10895]
+0,10,"gi|25144678|ref|NP_741153.1| Protein CCT-6, isoform a [Caenorhabditis elegans]"
+1,10,gi|18859933|ref|NP_573066.1| T-cp1zeta [Drosophila melanogaster]
+2,10,gi|158290192|ref|XP_311767.4| AGAP003477-PA [Anopheles gambiae str. PEST]
+0,11,gi|7657253|ref|NP_055221.1| putative T-complex protein 1 subunit theta-like 2
+1,11,"gi|332859042|ref|XP_525513.3| PREDICTED: chaperonin containing TCP1, subunit 8 (theta)-like 2 [Pan troglodytes]"
+2,11,"gi|57097695|ref|XP_539926.1| PREDICTED: chaperonin containing TCP1, subunit 8 (theta)-like 2 [Canis lupus familiaris]"
+3,11,"gi|297474296|ref|XP_002687026.1| PREDICTED: chaperonin containing TCP1, subunit 8 (theta)-like 2 [Bos taurus]"
+0,12,gi|6322524|ref|NP_012598.1| Cct5p [Saccharomyces cerevisiae S288c]
+1,12,gi|50304399|ref|XP_452149.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+2,12,gi|45198936|ref|NP_985965.1| AFR418Wp [Ashbya gossypii ATCC 10895]
+0,13,gi|6320058|ref|NP_010138.1| Cct4p [Saccharomyces cerevisiae S288c]
+1,13,gi|50310575|ref|XP_455307.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+2,13,gi|45187956|ref|NP_984179.1| ADR083Wp [Ashbya gossypii ATCC 10895]
+3,13,gi|19111947|ref|NP_595155.1| chaperonin-containing T-complex delta subunit Cct4 [Schizosaccharomyces pombe 972h-]
+4,13,gi|389633815|ref|XP_003714560.1| T-complex protein 1 subunit delta [Magnaporthe oryzae 70-15]
+5,13,gi|85111840|ref|XP_964129.1| T-complex protein 1 [Neurospora crassa OR74A]
+0,14,"gi|17564182|ref|NP_503522.1| Protein CCT-7, isoform a [Caenorhabditis elegans]"
+1,14,gi|15229866|ref|NP_187789.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+2,14,gi|24645179|ref|NP_649835.1| Tcp-1eta [Drosophila melanogaster]
+3,14,gi|347968503|ref|XP_312160.4| AGAP002762-PA [Anopheles gambiae str. PEST]
+0,15,gi|41053686|ref|NP_956877.1| T-complex protein 1 subunit delta
+1,15,"gi|55741978|ref|NP_001006852.1| chaperonin containing TCP1, subunit 4 (delta)"
+2,15,gi|46048906|ref|NP_996761.1| T-complex protein 1 subunit delta
+3,15,gi|84000361|ref|NP_001033283.1| T-complex protein 1 subunit delta
+4,15,gi|6753322|ref|NP_033967.1| T-complex protein 1 subunit delta
+5,15,gi|33414505|ref|NP_877966.1| T-complex protein 1 subunit delta
+6,15,gi|359320591|ref|XP_003639378.1| PREDICTED: T-complex protein 1 subunit delta isoform X1 [Canis lupus familiaris]
+7,15,gi|410035126|ref|XP_001152144.3| PREDICTED: T-complex protein 1 subunit delta [Pan troglodytes]
+8,15,gi|297266092|ref|XP_001114200.2| PREDICTED: t-complex protein 1 subunit delta-like isoform 1 [Macaca mulatta]
+9,15,gi|38455427|ref|NP_006421.2| T-complex protein 1 subunit delta isoform a
+0,16,gi|25147750|ref|NP_741031.1| Protein CCT-2 [Caenorhabditis elegans]
+1,16,gi|18858175|ref|NP_572524.1| CG7033 [Drosophila melanogaster]
+2,16,gi|158298574|ref|XP_318752.4| AGAP009694-PA [Anopheles gambiae str. PEST]
+0,17,gi|19112161|ref|NP_595369.1| chaperonin-containing T-complex zeta subunit Cct6 [Schizosaccharomyces pombe 972h-]
+1,17,gi|389644804|ref|XP_003720034.1| T-complex protein 1 subunit zeta [Magnaporthe oryzae 70-15]
+2,17,gi|85091533|ref|XP_958948.1| T-complex protein 1 subunit zeta [Neurospora crassa OR74A]
+0,18,gi|42627881|ref|NP_958863.1| T-complex protein 1 subunit beta
+1,18,"gi|55741976|ref|NP_001006757.1| chaperonin containing TCP1, subunit 2 (beta)"
+2,18,gi|60302718|ref|NP_001012551.1| T-complex protein 1 subunit beta
+3,18,gi|126521835|ref|NP_031662.2| T-complex protein 1 subunit beta
+4,18,gi|54400730|ref|NP_001005905.1| T-complex protein 1 subunit beta
+5,18,gi|5453603|ref|NP_006422.1| T-complex protein 1 subunit beta isoform 1
+6,18,gi|350539153|ref|NP_001233555.1| T-complex protein 1 subunit beta
+7,18,gi|297262937|ref|XP_001108460.2| PREDICTED: t-complex protein 1 subunit beta isoform 1 [Macaca mulatta]
+8,18,gi|77735435|ref|NP_001029411.1| T-complex protein 1 subunit beta
+9,18,gi|73968673|ref|XP_531675.2| PREDICTED: T-complex protein 1 subunit beta isoformX1 [Canis lupus familiaris]
+0,19,gi|545550952|ref|XP_535576.3| PREDICTED: T-complex protein 1 subunit theta isoformX1 [Canis lupus familiaris]
+0,20,gi|115465365|ref|NP_001056282.1| Os05g0556700 [Oryza sativa Japonica Group]
+0,21,gi|398366021|ref|NP_010474.3| Cct6p [Saccharomyces cerevisiae S288c]
+1,21,gi|50307769|ref|XP_453878.1| hypothetical protein [Kluyveromyces lactis NRRL Y-1140]
+2,21,gi|45200976|ref|NP_986546.1| AGL121Wp [Ashbya gossypii ATCC 10895]
+0,22,gi|41055032|ref|NP_957356.1| T-complex protein 1 subunit theta
+1,22,"gi|56118448|ref|NP_001007875.1| chaperonin containing TCP1, subunit 8 (theta)"
+2,22,gi|52138673|ref|NP_001004389.1| T-complex protein 1 subunit theta
+3,22,gi|126723461|ref|NP_033970.3| T-complex protein 1 subunit theta
+4,22,gi|347800699|ref|NP_001099367.2| T-complex protein 1 subunit theta
+5,22,gi|75812922|ref|NP_001028781.1| T-complex protein 1 subunit theta
+6,22,gi|114683784|ref|XP_531416.2| PREDICTED: T-complex protein 1 subunit theta isoform 5 [Pan troglodytes]
+7,22,gi|109065591|ref|XP_001101969.1| PREDICTED: t-complex protein 1 subunit theta isoform 5 [Macaca mulatta]
+8,22,gi|48762932|ref|NP_006576.2| T-complex protein 1 subunit theta isoform 1
+0,23,gi|15229559|ref|NP_189041.1| heat shock protein 60 [Arabidopsis thaliana]
+1,23,gi|115482382|ref|NP_001064784.1| Os10g0462900 [Oryza sativa Japonica Group]
+2,23,gi|115450675|ref|NP_001048938.1| Os03g0143400 [Oryza sativa Japonica Group]
+0,24,"gi|31044489|ref|NP_851847.1| 60 kDa heat shock protein, mitochondrial"
+1,24,gi|156717630|ref|NP_001096355.1| heat shock 60kDa protein 1 (chaperonin)
+2,24,"gi|61098372|ref|NP_001012934.1| 60 kDa heat shock protein, mitochondrial precursor"
+3,24,"gi|183396771|ref|NP_034607.3| 60 kDa heat shock protein, mitochondrial"
+4,24,"gi|206597443|ref|NP_071565.2| 60 kDa heat shock protein, mitochondrial"
+5,24,"gi|297264607|ref|XP_002799053.1| PREDICTED: 60 kDa heat shock protein, mitochondrial isoform 2 [Macaca mulatta]"
+6,24,"gi|41399285|ref|NP_955472.1| 60 kDa heat shock protein, mitochondrial"
+7,24,"gi|114582384|ref|XP_001169056.1| PREDICTED: 60 kDa heat shock protein, mitochondrial isoform 3 [Pan troglodytes]"
+8,24,"gi|545555747|ref|XP_005640555.1| PREDICTED: 60 kDa heat shock protein, mitochondrial isoform X3 [Canis lupus familiaris]"
+9,24,"gi|262205495|ref|NP_001160082.1| 60 kDa heat shock protein, mitochondrial"
+0,25,"gi|513239679|ref|XP_423379.4| PREDICTED: T-complex protein 1 subunit gamma, partial [Gallus gallus]"
+0,26,"gi|83642818|ref|NP_001032883.1| chaperonin containing TCP1, subunit 8 (theta)-like 1"
+1,26,gi|564345443|ref|XP_006236031.1| PREDICTED: putative T-complex protein 1 subunit theta-like 2-like [Rattus norvegicus]
+2,26,"gi|38348482|ref|NP_941023.1| chaperonin containing TCP1, subunit 8 (theta)-like 1"
+0,27,"gi|17555558|ref|NP_497429.1| Protein HSP-60, isoform a [Caenorhabditis elegans]"
+1,27,"gi|24641191|ref|NP_511115.2| heat shock protein 60, isoform A [Drosophila melanogaster]"
+2,27,gi|58391242|ref|XP_318461.2| AGAP004002-PA [Anopheles gambiae str. PEST]
+0,28,gi|19112198|ref|NP_595406.1| chaperonin-containing T-complex theta subunit Cct8 [Schizosaccharomyces pombe 972h-]
+1,28,gi|389642727|ref|XP_003718996.1| T-complex protein 1 [Magnaporthe oryzae 70-15]
+2,28,gi|85090843|ref|XP_958612.1| T-complex protein 1 subunit theta [Neurospora crassa OR74A]
+0,29,gi|27545249|ref|NP_775357.1| T-complex protein 1 subunit gamma
+1,29,gi|45361525|ref|NP_989339.1| chaperonin subunit 3 (gamma)
+2,29,gi|6753320|ref|NP_033966.1| T-complex protein 1 subunit gamma
+3,29,gi|40018616|ref|NP_954522.1| T-complex protein 1 subunit gamma
+4,29,gi|345802573|ref|XP_537245.3| PREDICTED: T-complex protein 1 subunit gamma isoform 1 [Canis lupus familiaris]
+5,29,gi|164448698|ref|NP_001017934.2| T-complex protein 1 subunit gamma
+6,29,gi|109017347|ref|XP_001116562.1| PREDICTED: t-complex protein 1 subunit gamma-like isoform 4 [Macaca mulatta]
+7,29,gi|63162572|ref|NP_005989.3| T-complex protein 1 subunit gamma isoform a
+8,29,gi|350536905|ref|NP_001233449.1| T-complex protein 1 subunit gamma
+0,30,gi|115462083|ref|NP_001054641.1| Os05g0147400 [Oryza sativa Japonica Group]
+1,30,gi|15232923|ref|NP_186902.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+2,30,gi|30685661|ref|NP_197111.2| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+0,31,gi|115469620|ref|NP_001058409.1| Os06g0687700 [Oryza sativa Japonica Group]
+0,32,gi|15240317|ref|NP_198008.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+1,32,gi|115468394|ref|NP_001057796.1| Os06g0538000 [Oryza sativa Japonica Group]
+2,32,gi|115445301|ref|NP_001046430.1| Os02g0247200 [Oryza sativa Japonica Group]
+0,33,gi|18396719|ref|NP_566219.1| TCP-1/cpn60 chaperonin family protein [Arabidopsis thaliana]
+1,33,gi|115456045|ref|NP_001051623.1| Os03g0804800 [Oryza sativa Japonica Group]
+0,34,gi|27545245|ref|NP_775355.1| T-complex protein 1 subunit eta
+1,34,"gi|82524818|ref|NP_001032347.1| chaperonin containing TCP1, subunit 7 (eta)"
+2,34,gi|71895883|ref|NP_001026712.1| T-complex protein 1 subunit eta
+3,34,gi|238814391|ref|NP_031664.3| T-complex protein 1 subunit eta
+4,34,gi|157819651|ref|NP_001100073.1| T-complex protein 1 subunit eta
+5,34,gi|5453607|ref|NP_006420.1| T-complex protein 1 subunit eta isoform a
+6,34,gi|332813403|ref|XP_003309105.1| PREDICTED: T-complex protein 1 subunit eta isoform 1 [Pan troglodytes]
+7,34,gi|109103372|ref|XP_001104880.1| PREDICTED: t-complex protein 1 subunit eta isoform 4 [Macaca mulatta]
+8,34,gi|359324375|ref|XP_003640363.1| PREDICTED: T-complex protein 1 subunit eta-like [Canis lupus familiaris]
+9,34,gi|73980527|ref|XP_852889.1| PREDICTED: T-complex protein 1 subunit eta isoform 2 [Canis lupus familiaris]
+10,34,gi|114051425|ref|NP_001039636.1| T-complex protein 1 subunit eta
+0,35,gi|47086803|ref|NP_997778.1| T-complex protein 1 subunit epsilon
+1,35,gi|6671702|ref|NP_031663.1| T-complex protein 1 subunit epsilon
+2,35,gi|51890219|ref|NP_001004078.1| T-complex protein 1 subunit epsilon
+3,35,gi|274325364|ref|NP_001029767.2| T-complex protein 1 subunit epsilon
+4,35,gi|24307939|ref|NP_036205.1| T-complex protein 1 subunit epsilon
+5,35,gi|114598964|ref|XP_517629.2| PREDICTED: T-complex protein 1 subunit epsilon isoform 5 [Pan troglodytes]
+6,35,gi|109076723|ref|XP_001085735.1| PREDICTED: t-complex protein 1 subunit epsilon isoform 4 [Macaca mulatta]
+7,35,gi|359323746|ref|XP_848303.2| PREDICTED: LOW QUALITY PROTEIN: T-complex protein 1 subunit epsilon isoform 1 [Canis lupus familiaris]
+8,35,gi|60302774|ref|NP_001012581.1| T-complex protein 1 subunit epsilon
+9,35,"gi|45361527|ref|NP_989340.1| chaperonin containing TCP1, subunit 5 (epsilon)"
