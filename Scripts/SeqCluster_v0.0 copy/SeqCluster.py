@@ -13,6 +13,7 @@ from Bio import SeqIO
 import sys
 import random
 import Levenshtein
+
 #FUNCTIONS
 
 def distMatch(packet):#Finds the match counts for for each pair of sequences.
@@ -23,15 +24,15 @@ def distMatch(packet):#Finds the match counts for for each pair of sequences.
 def SeqClust(fastaAln,K,kmerL):# function that takes in a Fasta Alignment, breaks into Kmers and then performs parallelized comparison of the kmers with Pool()
     inF=fastaAln
     records = list(SeqIO.parse(inF, "fasta"))
-    subsampRecords=[records[i] for i in random.sample(range(len(records)),int((len(records))/10))]
+    #subsampRecords=[records[i] for i in random.sample(range(len(records)),int((len(records))/10))]
     print("Before sub-sampling:")
     print(len(records))
-    print("After sub-sampling:")
-    print(len(subsampRecords))
+    #print("After sub-sampling:")
+    #print(len(subsampRecords))
     #make fragment list
-    records=subsampRecords
+    #records=subsampRecords
     print("computing")
-    print(records[0])
+    #print(records[0])
     dists=[[Levenshtein.distance(str(i),str(j)) for i in records] for j in records]
 
     print(pd.DataFrame(dists))
