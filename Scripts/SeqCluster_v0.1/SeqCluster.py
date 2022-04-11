@@ -1,4 +1,4 @@
-#Usage: python3 seqCluster.py <myfasta.fa> <K> <Clustering Method: "AC" or "BIRCH">
+#Usage: python3 seqCluster.py <myfasta.fa> <K> <Clustering Method: "AC" or "BIRCH"> <"TRANS" (optional arg)>
 #levenshtein
 #MODULES
 import pandas as pd
@@ -10,6 +10,7 @@ from multiprocessing import Pool
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.cluster import Birch
 from Bio import SeqIO
+from Bio import Seq
 import sys
 import random
 import Levenshtein
@@ -21,9 +22,16 @@ def distMatch(packet):#Finds the match counts for for each pair of sequences.
     matchList=[[(np.sum(np.array(fragList[pos][taxA] != fragList[pos][taxB]))) for taxA in range(0,dims[1])] for taxB in range(0,dims[1])]
     return(np.array(matchList))
 
-def SeqClust(fastaAln,K,kmerL):# function that takes in a Fasta Alignment, breaks into Kmers and then performs parallelized comparison of the kmers with Pool()
+def SeqClust(fastaAln,K,kmerL,TRANSLATE=False):# function that takes in a Fasta Alignment, breaks into Kmers and then performs parallelized comparison of the kmers with Pool()
     inF=fastaAln
-    records = list(SeqIO.parse(inF, "fasta"))
+    inrecords = list(SeqIO.parse(inF, "fasta"))
+    if TRANSLATE==True:
+        records=[]
+        for record in SeqIO.parse(inF, "fasta"):
+            record.seq=Seq.translate(record.seq)
+            records.append(record)
+    else:
+        records=inrecords
     #subsampRecords=[records[i] for i in random.sample(range(len(records)),int((len(records))/10))]
     print("Before sub-sampling:")
     print(len(records))
@@ -57,7 +65,7 @@ def SeqClust(fastaAln,K,kmerL):# function that takes in a Fasta Alignment, break
 
         plt.scatter([i[0] for i in Emb],[i[1] for i in Emb],c=clusters,cmap="Spectral")
         plt.savefig(inFile+clusterMethod+"_SeqCluster.png")
-    selectRecords=[[records[i] for i in range(len(clusters)) if clusters[i]==cluster] for cluster in np.unique(clusters)]
+    selectRecords=[[inrecords[i] for i in range(len(clusters)) if clusters[i]==cluster] for cluster in np.unique(clusters)]
     allDF=pd.DataFrame()
     for cluster in np.unique(clusters):
         print(cluster)
@@ -80,11 +88,18 @@ if __name__ == "__main__":
     if len(sys.argv)>=3: #Read desired Cluster method
         clusterMethod=sys.argv[3]
         print("Cluster Method: "+clusterMethod)
+    if len(sys.argv)>=4: #Translation
+        if sys.argv[4] == "TRANS":
+            TRANSLATE=True
+            print("Translating before distance methods")
+        else:
+            TRANSLATE=False
+            print("Not translating.")
     if clusterMethod not in ["BIRCH","AC"]:
             print("Clustering method must be Birch: 'BIRCH' or Agglomerative Clustering: 'AC'. Defaulting to Birch. ")
     else:
         clusterMethod="BIRCH"
-    outputclusters, reps = SeqClust(inFile,K,kmerL=kmerL)
+    outputclusters, reps = SeqClust(inFile,K,kmerL=kmerL, TRANSLATE=True)
     outputclusters.to_csv(inFile+clusterMethod+"_outputClusters.csv")
     with open(inFile+clusterMethod+"_outputSeqs.fasta", "w") as output_handle:#write out representative samples.
         SeqIO.write(reps, output_handle, "fasta")
