@@ -96,8 +96,7 @@ if __name__ == "__main__":
             TRANSLATE=False
             print("Not translating.")
     if clusterMethod not in ["BIRCH","AC"]:
-            print("Clustering method must be Birch: 'BIRCH' or Agglomerative Clustering: 'AC'. Defaulting to Birch. ")
-    else:
+        print("Clustering method must be Birch: 'BIRCH' or Agglomerative Clustering: 'AC'. Defaulting to Birch. ")
         clusterMethod="BIRCH"
     outputclusters, reps = SeqClust(inFile,K,kmerL=kmerL, TRANSLATE=True)
     outputclusters.to_csv(inFile+clusterMethod+"_outputClusters.csv")
