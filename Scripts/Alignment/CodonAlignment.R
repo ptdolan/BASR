@@ -22,6 +22,6 @@ inputSeqs<-inputSeqs[]#Filter by some criteria.
 names(inputSeqs)<-lapply(X = names(inputSeqs),function(X){paste(strsplit(X," ")[[1]],collapse= "_")}) #avoids some name parsing issues with other programs.
 
 MAlign<-AlignTranslation(processors = 8,inputSeqs,refinements=10)
-SMAlign<-StaggerAlignment(MAlign)
+SMAlign<-StaggerAlignment(MAlign,processors=NULL)
 writeXStringSet(SMAlign,filepath = paste(inputList[1],"_codonAlign.aln",sep = ""))
 print(paste("Finished Alignment. Wrote",inputList[1],"_codonAlign.aln",sep=""))
